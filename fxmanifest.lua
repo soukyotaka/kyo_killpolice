@@ -1,9 +1,9 @@
 fx_version 'cerulean'
 game 'gta5'
 
-Author 'Kyotaka#0007'
+Author 'Kyotaka'
 Discord 'https://discord.gg/RVPcK7sQAK'
-version '2.0.0'
+version '2.0.1'
 
 shared_scripts {
    'shared.lua'
