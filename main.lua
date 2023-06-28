@@ -2,11 +2,11 @@ local Tunnel = module("vrp","lib/Tunnel")
 kyo = Tunnel['getInterface'](GetCurrentResourceName())
 
 AddEventHandler('gameEventTriggered', function(event, menssage)
-  if not (event == 'CEventNetworkEntityDamage') then
+  if (not (event == 'CEventNetworkEntityDamage')) then
     return
   end
 
-  if IsEntityAPed(menssage[2]) and IsPedAPlayer(menssage[2]) then
+  if (IsEntityAPed(menssage[2]) and IsPedAPlayer(menssage[2])) then
     if (GetEntityHealth(menssage[1]) <= kyocfg['health']) then
       local victim = NetworkGetPlayerIndexFromPed(menssage[1])
       local killer = NetworkGetPlayerIndexFromPed(menssage[2])
